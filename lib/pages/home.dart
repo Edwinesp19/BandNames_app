@@ -44,6 +44,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget _bandTile(Band bands) {
+    
     return Dismissible(
       key: Key(bands.id),
       direction: DismissDirection.startToEnd,
@@ -51,6 +52,7 @@ class _HomePageState extends State<HomePage> {
         print('direction: $direction');
         print('direction: ${bands.id}');
       },
+
       background: Container(
         padding: EdgeInsets.only(left: 8.0),
         color: Colors.red,
